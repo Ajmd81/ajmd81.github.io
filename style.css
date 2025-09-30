@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a4d8c, #2196F3, #B3E5FC, #f0f8ff);
+    color: #1a1a1a;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -21,37 +23,43 @@ body {
 header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, rgba(138, 35, 135, 0.3), rgba(23, 108, 191, 0.3));
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.4), rgba(179, 229, 252, 0.4));
     border-radius: 20px;
     margin-bottom: 60px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.3);
     backdrop-filter: blur(10px);
     animation: fadeInDown 1s ease-out;
 }
 
 h1 {
-    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0a4d8c 0%, #2196F3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: glow 2s ease-in-out infinite alternate;
+    letter-spacing: -1px;
 }
 
 @keyframes glow {
     from {
-        filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.5));
+        filter: drop-shadow(0 0 5px rgba(33, 150, 243, 0.5));
     }
     to {
-        filter: drop-shadow(0 0 20px rgba(118, 75, 162, 0.8));
+        filter: drop-shadow(0 0 20px rgba(33, 150, 243, 0.8));
     }
 }
 
 .subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 1.3em;
-    color: #b0b0b0;
+    color: #2c3e50;
     margin-bottom: 15px;
+    letter-spacing: 0.5px;
 }
 
 .contact-info {
@@ -64,19 +72,21 @@ h1 {
 }
 
 .contact-info a {
-    color: #667eea;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #0a4d8c;
     text-decoration: none;
     padding: 10px 20px;
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(33, 150, 243, 0.1);
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(102, 126, 234, 0.3);
+    border: 1px solid rgba(33, 150, 243, 0.3);
 }
 
 .contact-info a:hover {
-    background: rgba(102, 126, 234, 0.3);
+    background: rgba(33, 150, 243, 0.3);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.4);
 }
 
 section {
@@ -85,12 +95,15 @@ section {
 }
 
 h2 {
-    font-size: 2.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
     margin-bottom: 30px;
     text-align: center;
-    color: #fff;
+    color: #0a4d8c;
     position: relative;
     padding-bottom: 15px;
+    letter-spacing: -0.5px;
 }
 
 h2::after {
@@ -101,16 +114,19 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #0a4d8c, #2196F3);
     border-radius: 2px;
 }
 
 .about-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1em;
-    color: #c0c0c0;
+    color: #2c3e50;
+    line-height: 1.8;
 }
 
 /* Sección de Habilidades */
@@ -125,11 +141,12 @@ h2::after {
 }
 
 .skills-category-title {
-    font-size: 1.4em;
-    color: #667eea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #0a4d8c;
     text-align: center;
     margin-bottom: 25px;
-    font-weight: 600;
 }
 
 .skills-grid {
@@ -141,20 +158,20 @@ h2::after {
 }
 
 .skill-item {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(179, 229, 252, 0.15));
     padding: 20px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 15px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(33, 150, 243, 0.2);
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.25), rgba(118, 75, 162, 0.25));
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.25), rgba(179, 229, 252, 0.25));
 }
 
 .skill-icon {
@@ -163,9 +180,10 @@ h2::after {
 }
 
 .skill-name {
-    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #e0e0e0;
+    font-size: 1em;
+    color: #2c3e50;
 }
 
 .tech-grid {
@@ -176,25 +194,26 @@ h2::after {
 }
 
 .tech-item {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.2), rgba(179, 229, 252, 0.2));
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(33, 150, 243, 0.2);
     cursor: default;
 }
 
 .tech-item:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+    box-shadow: 0 10px 30px rgba(33, 150, 243, 0.4);
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.3), rgba(179, 229, 252, 0.3));
 }
 
 .tech-item span {
-    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #fff;
+    font-size: 1.1em;
+    color: #0a4d8c;
 }
 
 .projects-grid {
@@ -205,11 +224,11 @@ h2::after {
 }
 
 .project-card {
-    background: linear-gradient(135deg, rgba(30, 30, 60, 0.8), rgba(20, 20, 40, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(225, 245, 254, 0.9));
     border-radius: 15px;
     padding: 30px;
     transition: all 0.4s ease;
-    border: 1px solid rgba(102, 126, 234, 0.3);
+    border: 1px solid rgba(33, 150, 243, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -221,7 +240,7 @@ h2::after {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(33, 150, 243, 0.2), transparent);
     transition: left 0.5s ease;
 }
 
@@ -231,49 +250,56 @@ h2::after {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
-    border-color: rgba(102, 126, 234, 0.6);
+    box-shadow: 0 15px 40px rgba(33, 150, 243, 0.3);
+    border-color: rgba(33, 150, 243, 0.6);
 }
 
 .project-card h3 {
-    color: #667eea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #0a4d8c;
     margin-bottom: 15px;
     font-size: 1.5em;
 }
 
 .project-card p {
-    color: #b0b0b0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
     margin-bottom: 20px;
     line-height: 1.8;
 }
 
 .project-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #0a4d8c, #2196F3);
     border-radius: 25px;
     transition: all 0.3s ease;
-    font-weight: 600;
 }
 
 .project-link:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 5px 20px rgba(33, 150, 243, 0.6);
 }
 
 footer {
     text-align: center;
     padding: 40px 20px;
-    background: rgba(20, 20, 40, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     margin-top: 60px;
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    border: 1px solid rgba(33, 150, 243, 0.2);
 }
 
 footer p {
-    color: #b0b0b0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
     font-size: 1.1em;
 }
 
@@ -310,7 +336,7 @@ footer p {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     h2 {

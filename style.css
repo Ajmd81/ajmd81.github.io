@@ -15,7 +15,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 60px;
 }
 
 header {
@@ -144,8 +144,8 @@ h2::after {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
     margin-top: 30px;
 }
 
@@ -250,6 +250,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    
+    .container {
+        padding: 20px;
+    }
+
     h1 {
         font-size: 2em;
     }
